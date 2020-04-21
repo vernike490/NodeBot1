@@ -1,0 +1,13 @@
+const Discord = require('discord.js')
+
+module.exports.help = {
+name: 'Name Of Command',
+aliases: ['Alias1', 'Alias2', 'etc.']//Leave Blank for no Aliases
+}
+
+
+module.exports.run = async (client,message,args) =>{
+
+//Code for Command Here
+
+}
