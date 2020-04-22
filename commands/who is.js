@@ -23,7 +23,7 @@ module.exports.run = async (client, message, args) => {
 
   const embed = new Discord.MessageEmbed()
     .setFooter(member.displayName, member.user.displayAvatarURL)
-    .setThumbnail(member.displayAvatarURL)
+    .setThumbnail(member.user.displayAvatarURL())
     .setColor(member.displayHexColor === '#000000' ? '#ffffff' : member.displayHexColor)
 
     .addField('Member information:', stripIndents`**- Display name:** ${member.displayName}
@@ -35,7 +35,7 @@ module.exports.run = async (client, message, args) => {
             **- Tag**: ${member.user.tag}
             **- Created at**: ${created}`, true)
 
-    .setTimestamp();
+    .setTimestamp()
 
   if (member.user.presence.game)
     embed.addField('Currently playing', stripIndents`** Name:** ${member.user.presence.game.name}`);
