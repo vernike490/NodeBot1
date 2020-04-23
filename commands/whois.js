@@ -19,6 +19,7 @@ module.exports.run = async (client, message, args) => {
       .map(r => r)
       .join(", ") || "none";
   let embed = new Discord.MessageEmbed()
+  .setColor(colours.red_dark)
     .addField(
       "Member Information:",
       `**-Nickname: **${user.displayName}\n**-Joined At: **${joined}\n**- Roles: ** ${roles}`,
