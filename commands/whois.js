@@ -59,7 +59,7 @@ module.exports.run = async (client, message, args) => {
   }
   if (activ[0]["name"] === "Custom Status" && activ[1] && activ[2]) {
     if (!activ[0]["state"]) activ[0]["state"] = "Cannot Display This Status";
-    embed.addField("Custom Status", `${activ[0]["state"]}`);
+    embed.addField("Custom Status", `${activ[0]["emoji"]} ${activ[0]["state"]}`);
     embed.addField(
       "Listening Activity",
       `${activ[2]["type"]} to ${activ[2]["name"]}`
