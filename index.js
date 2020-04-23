@@ -18,7 +18,7 @@ client.on("ready", async ready => {
   console.log("Online!");
 
   client.user.setPresence({
-    activity: { name: "Growing bigger everyday! If you thought something dirty dont even talk." },
+    activity: { name: "Mining Diamonds and making swords." },
     status: "dnd"
   });
   const fs = require("fs");

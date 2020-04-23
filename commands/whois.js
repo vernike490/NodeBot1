@@ -31,7 +31,6 @@ module.exports.run = async (client, message, args) => {
       true
     )
     .setThumbnail(user.user.displayAvatarURL())
-    .setColor(user.displayHexColor)
     .setTimestamp();
   let activ = user.user.presence.activities;
   if (!activ[0]) return message.channel.send(embed);
