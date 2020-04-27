@@ -54,7 +54,7 @@ module.exports.run = async (client, message, args) => {
   }
   if (activ[0].name === "Custom Status" && activ[1] && !activ[2]) {
     if (!activ[0]["state"]) activ[0]["state"] = "Cannot Display This Status";
-    embed.addField("Custom Status", `${activ[0]["state"]}`);
+    embed.addField("Custom Status", `${activ[0]["emoji"]} ${activ[0]["state"]}`);
     embed.addField("Game Activity", `${activ[1]["type"]} ${activ[1]["name"]}`);
   }
   if (activ[0]["name"] === "Custom Status" && activ[1] && activ[2]) {
