@@ -81,5 +81,5 @@ client.on("message", message => {
     console.log(e);
   }
 });
-const token = "NzAxOTc0MDcwNzUyNzA2NjAx.Xp983Q.2vtHJ_-G6RA4aIWND2e71MZePSs";
+const token = "";
 client.login(token);
